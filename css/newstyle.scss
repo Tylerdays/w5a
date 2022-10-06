@@ -1,0 +1,42 @@
+@use "animations";
+
+*{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+    font-size: 3rem;
+}
+header{
+    display: grid;
+    font-size: 3vh;
+    grid-template-columns: 1fr 10fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    header>img{
+            height: 10vh;
+    }
+}
+main{
+    display: grid;
+    background-color: aqua;
+    margin-bottom: 10vh;
+}
+
+.left:active{
+    animation: left 5s;
+}
+.right:hover{
+    animation: right 1s infinite linear;
+}
+h2{
+    background-color: blue;
+}
+h2:hover{
+    animation: heads 3s;
+    animation-iteration-count: infinite;
+}
+p{
+    display: grid;
+    font-size: 4vh;
+}
